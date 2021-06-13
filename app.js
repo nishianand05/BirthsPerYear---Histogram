@@ -39,7 +39,7 @@ bars
 
 bars
     .append('text')
-    .text(d => d.x0 + '-' + d.x1 + '(bar height: ' + d.length + ')')
+    .text(d => d.x0 + '-' + d.x1)
     .attr('transform', 'rotate(-90)')
     .attr('y', d => (xScale(d.x1) + xScale(d.x0)) / 2)
     .attr('x', -height + 10)
